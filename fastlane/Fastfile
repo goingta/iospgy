@@ -29,8 +29,8 @@ platform :ios do
 	    )
 
   		pgyer(
-  			api_key: "87a96feb51f5ecdfafc2bc4c9eeb045a",
-  		 	user_key: "dad6308763eece8035c49ea33e676138",
+  			api_key: "811e984eb5e760bb7f2885484c6c4edb",
+  		 	user_key: "15943af593e531aef0b1f7d6c70d4131",
   		 	update_description: git_log
   		 )
 	end
