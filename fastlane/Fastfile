@@ -1,0 +1,48 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+fastlane_version "2.62.0"
+default_platform(:ios)
+
+platform :ios do
+  
+	desc "发布 测试版本 到 蒲公英"
+  	lane :pgy do    
+	  	git_log = sh("git log --no-merges -1 --pretty=format:'# %ai%n# %B by %an'")
+
+	    gym(
+	    	scheme: "ToolChain", 
+	    	export_method: "enterprise",
+	    	output_directory: "output",
+	    	configuration: "Release"
+	    )
+
+  		pgyer(
+  			api_key: "87a96feb51f5ecdfafc2bc4c9eeb045a",
+  		 	user_key: "dad6308763eece8035c49ea33e676138",
+  		 	update_description: git_log
+  		 )
+	end
+
+	
+
+	desc "发布 测试版本 到 Testflight"
+	lane :beta do
+	  	build_app(scheme: "ToolChain")
+	  	upload_to_testflight
+	  	slack(message: "Successfully distributed a new beta build")
+	end
+end
+
+

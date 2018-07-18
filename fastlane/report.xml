@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying fastlane version" time="0.001521">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001049">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: git log --no-merges -1 --pretty=format:'# %ai%n# %B by %an'" time="0.021701">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: gym" time="180.216152">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: pgyer" time="13.622851">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
