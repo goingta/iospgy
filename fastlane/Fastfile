@@ -19,7 +19,7 @@ platform :ios do
   
 	desc "发布 测试版本 到 蒲公英"
   	lane :pgy do    
-	  
+
 	  	git_log = sh("git log --no-merges -1 --pretty=format:'# %ai%n# %B by %an'")
 
 	    gym(
@@ -34,6 +34,7 @@ platform :ios do
   		 	user_key: "15943af593e531aef0b1f7d6c70d4131",
   		 	update_description: git_log
   		 )
+		   
 	end
 
 end
