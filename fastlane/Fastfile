@@ -22,7 +22,7 @@ platform :ios do
 	  	git_log = sh("git log --no-merges -1 --pretty=format:'# %ai%n# %B by %an'")
 
 	    gym(
-	    	scheme: "ToolChain", 
+	    	scheme: "iospgy", 
 	    	export_method: "enterprise",
 	    	output_directory: "output",
 	    	configuration: "Release"
@@ -35,14 +35,6 @@ platform :ios do
   		 )
 	end
 
-	
-
-	desc "发布 测试版本 到 Testflight"
-	lane :beta do
-	  	build_app(scheme: "ToolChain")
-	  	upload_to_testflight
-	  	slack(message: "Successfully distributed a new beta build")
-	end
 end
 
 
