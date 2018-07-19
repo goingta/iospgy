@@ -19,6 +19,7 @@ platform :ios do
   
 	desc "发布 测试版本 到 蒲公英"
   	lane :pgy do    
+	  
 	  	git_log = sh("git log --no-merges -1 --pretty=format:'# %ai%n# %B by %an'")
 
 	    gym(
