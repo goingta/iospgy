@@ -17,6 +17,13 @@ class PGYNetwork {
         }
     }
     
+    func jenkinsBuild(jenkinsUrlString: String,callback: (()->())?) {
+        let headers = [ "Authorization": "Basic " + jenkinsAuthorization ]
+        Alamofire.request(jenkinsUrlString, method: .post, parameters: nil,encoding: URLEncoding.default, headers: headers) .responseJSON { response in
+            callback?()
+        }
+    }
+    
     func request <T: BaseMappable> (_ method: Alamofire.HTTPMethod,
                                     _ url: URLConvertible,
                                     parameters: [String: Any]? = nil,

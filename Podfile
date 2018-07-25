@@ -8,6 +8,7 @@ def publicPods
     pod "Alamofire"
     pod "ObjectMapper"
     pod "PullToRefreshKit"
+    pod "Toast-Swift"
     
     pod "Pgyer"
     pod "PgyUpdate"

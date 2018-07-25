@@ -4,6 +4,7 @@ PODS:
   - Pgyer (2.8.9)
   - PgyUpdate (1.6)
   - PullToRefreshKit (0.8.6)
+  - Toast-Swift (3.0.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Pgyer
   - PgyUpdate
   - PullToRefreshKit
+  - Toast-Swift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -19,6 +21,7 @@ SPEC REPOS:
     - Pgyer
     - PgyUpdate
     - PullToRefreshKit
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -26,7 +29,8 @@ SPEC CHECKSUMS:
   Pgyer: 830654e51e23f754cce5d8b3ea9ba72be68452eb
   PgyUpdate: cd6c2ada5928f36a9f904d8f96a9b3b53e190755
   PullToRefreshKit: 172df52ab9c6cb2c1d4b1872b49f448d6291523f
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: 63e8a4107c4ba26afe6c5ea4f9fbad926e719d68
+PODFILE CHECKSUM: 70acc59ed809efde6a0b2c97a42e84a4355d5c63
 
 COCOAPODS: 1.5.0

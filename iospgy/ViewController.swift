@@ -8,6 +8,7 @@
 
 import UIKit
 import PullToRefreshKit
+import Toast_Swift
 
 class ViewController: UIViewController {
 
@@ -43,15 +44,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func build(_ sender: Any) {
-        let alertController = UIAlertController(title: "温馨提示",
-                                                message: "此功能直接对接自己的jenkins服务器地址就可以了！", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-        let okAction = UIAlertAction(title: "好的", style: .default, handler: {
-            action in
-        })
-        alertController.addAction(cancelAction)
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
+        //这里需要替换成自己的jenkins地址
+        //格式：http://{IP}:{端口号}/buildByToken/build?job={Job名称}&token={Token}
+        network.jenkinsBuild(jenkinsUrlString: "http://{IP}:{端口号}/buildByToken/build?job={Job名称}&token={Token}") { [weak self] in
+            guard let _self = self else { return }
+            _self.view.makeToast("触发成功！")
+        }
     }
 }
 
