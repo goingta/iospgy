@@ -14,7 +14,7 @@ let pgyerAppKey = "35b60c374269ee0f9ffff517b1b47c9b"
 let jenkinsAuthorization = "ZGV2OmRvY3Rvcndvcms="
 
 //开放平台APPKey
-let wechatKey = "wxfaaf1e83f6ef72c6"
+let wechatKey = "wx906221748b3266dd"
 let weappId = "gh_3ebf96e60b74"
 
 //userDefault Key

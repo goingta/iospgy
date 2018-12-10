@@ -18,6 +18,7 @@ class MiniProgramListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 90
+        tableView.tableFooterView = UIView()
         self.navigationController?.navigationBar.topItem?.title = "小程序"
     }
     
