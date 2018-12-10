@@ -85,7 +85,7 @@
                             <outlet property="delegate" destination="QCY-LO-Nyh" id="EZS-5W-4AN"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="小程序" id="ZzP-1l-FZ7"/>
+                    <tabBarItem key="tabBarItem" title="小程序" image="weapp" selectedImage="weapp" id="ZzP-1l-FZ7"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLh-vq-ICa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,7 +205,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="主项目" id="EU3-8Z-18i"/>
+                    <tabBarItem key="tabBarItem" title="主项目" image="main" selectedImage="main" id="EU3-8Z-18i"/>
                     <navigationItem key="navigationItem" id="Pad-oQ-CZZ">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="FZR-Vk-Qsb">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="50O-4S-fNV">
@@ -264,6 +264,8 @@
     <resources>
         <image name="jiankangzhongduan" width="16" height="16"/>
         <image name="logo" width="60" height="60"/>
+        <image name="main" width="20" height="20"/>
         <image name="setting" width="28" height="28"/>
+        <image name="weapp" width="20" height="20"/>
     </resources>
 </document>

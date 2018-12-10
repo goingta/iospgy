@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        let img = UIImage.init(named: "tabbar")
+        print("end")
     }
     
     func initUI() {

@@ -21,11 +21,6 @@ or alternatively using `brew cask install fastlane`
 fastlane ios pgy
 ```
 发布 测试版本 到 蒲公英
-### ios beta
-```
-fastlane ios beta
-```
-发布 测试版本 到 Testflight
 
 ----
 
