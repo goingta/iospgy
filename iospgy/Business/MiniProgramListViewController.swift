@@ -41,10 +41,10 @@ class MiniProgramListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if !WXApi.isWXAppInstalled() {
-            self.view.makeToast("没有安装微信，无法跳转到小程序~")
-            return
-        }
+//        if !WXApi.isWXAppInstalled() {
+//            self.view.makeToast("没有安装微信，无法跳转到小程序~")
+//            return
+//        }
 
         let launchMiniProgramReq = WXLaunchMiniProgramReq.object()
         launchMiniProgramReq?.userName = dataSource[indexPath.row]["programName"]!
