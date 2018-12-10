@@ -1,10 +1,11 @@
 PODS:
   - Alamofire (4.7.2)
-  - ObjectMapper (3.2.0)
+  - ObjectMapper (3.4.1)
   - Pgyer (2.8.9)
   - PgyUpdate (1.6)
   - PullToRefreshKit (0.8.6)
   - Toast-Swift (3.0.1)
+  - WechatOpenSDK (1.8.3)
 
 DEPENDENCIES:
   - Alamofire
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - PgyUpdate
   - PullToRefreshKit
   - Toast-Swift
+  - WechatOpenSDK
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -22,15 +24,17 @@ SPEC REPOS:
     - PgyUpdate
     - PullToRefreshKit
     - Toast-Swift
+    - WechatOpenSDK
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
   Pgyer: 830654e51e23f754cce5d8b3ea9ba72be68452eb
   PgyUpdate: cd6c2ada5928f36a9f904d8f96a9b3b53e190755
   PullToRefreshKit: 172df52ab9c6cb2c1d4b1872b49f448d6291523f
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+  WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
 
-PODFILE CHECKSUM: 70acc59ed809efde6a0b2c97a42e84a4355d5c63
+PODFILE CHECKSUM: 97ef9ff095426ebd019ee9c5cb348c00a1de0e44
 
 COCOAPODS: 1.5.0

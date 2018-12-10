@@ -9,6 +9,7 @@ def publicPods
     pod "ObjectMapper"
     pod "PullToRefreshKit"
     pod "Toast-Swift"
+    pod "WechatOpenSDK"
     
     pod "Pgyer"
     pod "PgyUpdate"

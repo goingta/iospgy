@@ -11,6 +11,10 @@
 		271D101420C518FC008F0483 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D101320C518FC008F0483 /* SettingViewController.swift */; };
 		272D3D2220C16DCB00FC1FF8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D3D2120C16DCB00FC1FF8 /* StringExtension.swift */; };
 		27370B6F20FF17AD009A000D /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27370B6E20FF17AD009A000D /* Define.swift */; };
+		275A9A7121BE122D00BC3CC1 /* PGYViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A9A7021BE122D00BC3CC1 /* PGYViewModel.swift */; };
+		275A9A7421BE170D00BC3CC1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A9A7321BE170D00BC3CC1 /* UIColorExtension.swift */; };
+		275A9A7621BE17CE00BC3CC1 /* MiniProgramListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A9A7521BE17CE00BC3CC1 /* MiniProgramListViewController.swift */; };
+		275A9A7821BE374800BC3CC1 /* MiniprogramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A9A7721BE374800BC3CC1 /* MiniprogramCell.swift */; };
 		277B52A720F89A400044E469 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277B52A620F89A400044E469 /* Launch Screen.storyboard */; };
 		27D6053B20C1571C00CEC93C /* PGYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6053A20C1571C00CEC93C /* PGYModel.swift */; };
 		27D6053F20C157DD00CEC93C /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D6053E20C157DD00CEC93C /* InfoCell.xib */; };
@@ -30,6 +34,10 @@
 		271D101520C51B26008F0483 /* iospgy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iospgy-Bridging-Header.h"; sourceTree = "<group>"; };
 		272D3D2120C16DCB00FC1FF8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		27370B6E20FF17AD009A000D /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		275A9A7021BE122D00BC3CC1 /* PGYViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGYViewModel.swift; sourceTree = "<group>"; };
+		275A9A7321BE170D00BC3CC1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		275A9A7521BE17CE00BC3CC1 /* MiniProgramListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniProgramListViewController.swift; sourceTree = "<group>"; };
+		275A9A7721BE374800BC3CC1 /* MiniprogramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniprogramCell.swift; sourceTree = "<group>"; };
 		277B52A620F89A400044E469 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		27D6053A20C1571C00CEC93C /* PGYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGYModel.swift; sourceTree = "<group>"; };
 		27D6053E20C157DD00CEC93C /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
@@ -59,6 +67,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		275A9A6D21BE10F900BC3CC1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				272D3D2120C16DCB00FC1FF8 /* StringExtension.swift */,
+				275A9A7321BE170D00BC3CC1 /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		275A9A6F21BE118F00BC3CC1 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				275A9A7221BE146D00BC3CC1 /* ViewModel */,
+				27D6053820C1570C00CEC93C /* View */,
+				27FCCE4020C13222006A88F6 /* ViewController.swift */,
+				271D101020C1AF52008F0483 /* WKWebViewController.swift */,
+				271D101320C518FC008F0483 /* SettingViewController.swift */,
+				275A9A7521BE17CE00BC3CC1 /* MiniProgramListViewController.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		275A9A7221BE146D00BC3CC1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				275A9A7021BE122D00BC3CC1 /* PGYViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		27D6053620C1570C00CEC93C /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +110,6 @@
 			children = (
 				27D6053A20C1571C00CEC93C /* PGYModel.swift */,
 				27D6054420C166BC00CEC93C /* PGYListModel.swift */,
-				272D3D2120C16DCB00FC1FF8 /* StringExtension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,6 +119,7 @@
 			children = (
 				27D6053E20C157DD00CEC93C /* InfoCell.xib */,
 				27D6054020C15ACA00CEC93C /* InfoCell.swift */,
+				275A9A7721BE374800BC3CC1 /* MiniprogramCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,14 +145,12 @@
 		27FCCE3D20C13222006A88F6 /* iospgy */ = {
 			isa = PBXGroup;
 			children = (
+				27370B6E20FF17AD009A000D /* Define.swift */,
+				27FCCE3E20C13222006A88F6 /* AppDelegate.swift */,
+				275A9A6F21BE118F00BC3CC1 /* Business */,
+				275A9A6D21BE10F900BC3CC1 /* Extension */,
 				27D6053720C1570C00CEC93C /* Model */,
 				27D6053620C1570C00CEC93C /* Network */,
-				27D6053820C1570C00CEC93C /* View */,
-				27FCCE3E20C13222006A88F6 /* AppDelegate.swift */,
-				27370B6E20FF17AD009A000D /* Define.swift */,
-				27FCCE4020C13222006A88F6 /* ViewController.swift */,
-				271D101020C1AF52008F0483 /* WKWebViewController.swift */,
-				271D101320C518FC008F0483 /* SettingViewController.swift */,
 				27FCCE4220C13222006A88F6 /* Main.storyboard */,
 				277B52A620F89A400044E469 /* Launch Screen.storyboard */,
 				27FCCE4520C13224006A88F6 /* Assets.xcassets */,
@@ -261,15 +297,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D6053B20C1571C00CEC93C /* PGYModel.swift in Sources */,
+				275A9A7821BE374800BC3CC1 /* MiniprogramCell.swift in Sources */,
+				275A9A7621BE17CE00BC3CC1 /* MiniProgramListViewController.swift in Sources */,
 				272D3D2220C16DCB00FC1FF8 /* StringExtension.swift in Sources */,
 				27D6054120C15ACA00CEC93C /* InfoCell.swift in Sources */,
 				27FCCE4120C13222006A88F6 /* ViewController.swift in Sources */,
 				27FCCE3F20C13222006A88F6 /* AppDelegate.swift in Sources */,
 				271D101420C518FC008F0483 /* SettingViewController.swift in Sources */,
+				275A9A7121BE122D00BC3CC1 /* PGYViewModel.swift in Sources */,
 				27D6054520C166BC00CEC93C /* PGYListModel.swift in Sources */,
 				27D6054320C1629900CEC93C /* PGYNetwork.swift in Sources */,
 				27370B6F20FF17AD009A000D /* Define.swift in Sources */,
 				271D101120C1AF52008F0483 /* WKWebViewController.swift in Sources */,
+				275A9A7421BE170D00BC3CC1 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +450,10 @@
 				DEVELOPMENT_TEAM = 4UR54NAEWE;
 				INFOPLIST_FILE = "$(SRCROOT)/iospgy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doctorwork.toolchain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iospgy/iospgy-Bridging-Header.h";
@@ -428,7 +471,10 @@
 				DEVELOPMENT_TEAM = 4UR54NAEWE;
 				INFOPLIST_FILE = "$(SRCROOT)/iospgy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doctorwork.toolchain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iospgy/iospgy-Bridging-Header.h";

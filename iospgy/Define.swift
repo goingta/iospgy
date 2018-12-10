@@ -8,6 +8,15 @@
 
 import Foundation
 
+//蒲公英
 let pgyerApiKey = "811e984eb5e760bb7f2885484c6c4edb"
 let pgyerAppKey = "35b60c374269ee0f9ffff517b1b47c9b"
 let jenkinsAuthorization = "ZGV2OmRvY3Rvcndvcms="
+
+//开放平台APPKey
+let wechatKey = "wxfaaf1e83f6ef72c6"
+let weappId = "gh_3ebf96e60b74"
+
+//userDefault Key
+let userDefaultBuildBuildVersion    = "userDefaultBuildBuildVersion"
+let userDefaultAllListBuilds        = "userDefaultAllListBuilds"

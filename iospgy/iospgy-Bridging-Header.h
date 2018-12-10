@@ -12,5 +12,6 @@
 //蒲公英检查更新
 #import <PgySDK/PgyManager.h>
 #import <PgyUpdate/PgyUpdateManager.h>
+#import "WXApi.h"
 
 #endif /* iospgy_Bridging_Header_h */

@@ -11,8 +11,8 @@ import ObjectMapper
 
 class PGYNetwork {
     
-    func getPGYList(callback: ((_ model: PGYListModel?)->Void)? = nil) {
-        request(.post, URL(string: "https://www.pgyer.com/apiv2/app/builds")!, parameters: ["_api_key": pgyerApiKey, "appKey": pgyerAppKey], type: PGYListModel.self) { (model) in
+    func getPGYList(page:Int = 1, callback: ((_ model: PGYListModel?)->Void)? = nil) {
+        request(.post, URL(string: "https://www.pgyer.com/apiv2/app/builds")!, parameters: ["_api_key": pgyerApiKey, "appKey": pgyerAppKey, "page": page], type: PGYListModel.self) { (model) in
             callback?(model as? PGYListModel)
         }
     }
